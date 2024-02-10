@@ -18,17 +18,17 @@
 <body>
     <ul class="nav justify-content-center fixed-bottom bg-white shadow-lg">
         <li class="nav-item text-center" style="width:33%;">
-            <a class="nav-link text-warning text-opacity-75" href="<?= base_url() ?>">
-                <i class="fa-solid fa-house fa-2xl shadow"></i>
+            <a class="nav-link text-secondary text-opacity-75" href="<?= base_url() ?>">
+                <i class="fa-solid fa-house fa-2xl"></i>
             </a>
         </li>
         <li class="nav-item text-center" style="width:33%;">
-            <a class="nav-link text-warning text-opacity-75" href="products">
+            <a class="nav-link text-secondary text-opacity-75" href="products">
                 <i class="fa-solid fa-boxes-stacked fa-2xl"></i>
             </a>
         </li>
         <li class="nav-item text-center" style="width:33%;">
-            <a class="nav-link text-warning text-opacity-75" href="profile">
+            <a class="nav-link text-secondary text-opacity-75" href="profile">
                 <i class="fa-solid fa-user fa-2xl"></i>
             </a>
         </li>
