@@ -1,7 +1,7 @@
 <div class="container-fluid px-0">
     <nav class="navbar fixed-top bg-white shadow">
         <div class="container-fluid" style="flex-wrap: wrap;justify-content: flex-start;">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="#" onclick="history.back()">
                 <i class="fa fa-arrow-left text-muted"></i>
             </a>
             <?= form_open('/u/sign-up', ['csrf_id' => 'my-id', 'style' => 'width: 90%;']) ?>
@@ -10,7 +10,7 @@
         </div>
     </nav>
 </div>
-<div class="container mb-5">
+<div class="container mb-5">    
     <div class="row h-40 mt-5 pt-4 px-2" id="product_bucket">
         <?php foreach ($products as $items) : ?>
             <div class="g-col-md-12">

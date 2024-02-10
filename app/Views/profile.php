@@ -1,7 +1,7 @@
 <div class="container-fluid px-0">
     <nav class="navbar fixed-top bg-white shadow">
         <div class="container-fluid" style="flex-wrap: wrap;justify-content: flex-start;">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="#" onclick="history.back()">
                 <i class="fa fa-arrow-left text-muted"></i>
             </a>
             <h6 class="mb-0">
