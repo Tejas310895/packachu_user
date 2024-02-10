@@ -55,7 +55,7 @@ abstract class BaseController extends Controller
         if ($_SERVER['SERVER_NAME'] == 'localhost') {
             $this->data['image_url'] = 'http://localhost/packachu_new/admin/writable';
         } else {
-            $this->data['image_url'] = 'http://localhost/packachu_new/admin/writable';
+            $this->data['image_url'] = 'https://admin.packachu.com//writable';
         }
 
         // E.g.: $this->session = \Config\Services::session();
