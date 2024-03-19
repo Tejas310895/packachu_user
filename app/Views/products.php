@@ -67,24 +67,39 @@
             <div class="modal-body p-0" style="display: flex !important;align-items: flex-start;justify-content: center;">
                 <button type="button" class="btn bg-danger btn-close text-white p-2" data-bs-dismiss="modal" aria-label="Close" style="border-radius: 20px;position: fixed;top: -35px;background-color:chocolate;"></button>
                 <div class="container-fluid p-0">
-                    <div class="container-fluid p-3 shadow bg-white" style="border-radius: 30px 30px 0px 0px;">
+                    <div class="container-fluid p-2 shadow bg-white" style="border-radius: 30px 30px 0px 0px;">
                         <h3 class="text-center">Your Cart</h3>
                     </div>
                     <div class="container-fluid p-1 ">
-                        <div class="row bg-white" style="border-radius: 5px;">
-                            <div class="col-12">
-                                <div class="row pt-2">
-                                    <div class="col-6">
-                                        <h6 class="pt-1 pl-3">72mtr Aluminium Foil</h6>
-                                    </div>
-                                    <div class="col-3 pb-2 text-right">
-                                        <input type="text" class="form-control py-0" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
-                                    </div>
-                                    <div class="col-3 pt-2 text-right">
-                                        <h6 style="text-align: right;">₹ 230</h6>
+                        <div class="row bg-white m-2" style="border-radius: 5px;max-height: 57vh;overflow-y: scroll;">
+                            <?php for ($i = 0; $i < 15; $i++) : ?>
+                                <div class="col-12">
+                                    <div class="row pt-2">
+                                        <div class="col-6">
+                                            <h6 class="pt-1 pl-3">72mtr Aluminium Foil</h6>
+                                        </div>
+                                        <div class="col-3 pb-2 text-right">
+                                            <input type="text" class="form-control py-0" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                                        </div>
+                                        <div class="col-3 pt-2 text-right">
+                                            <h6 style="text-align: right;">₹ 230</h6>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            <?php endfor ?>
+                        </div>
+                    </div>
+                    <div class="container-fluid h-100 bg-white mb-2 px-0 rounded-0">
+                        <select class="form-select rounded-0" aria-label=" Default select example">
+                            <option selected>Select Customers</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="container-fluid h-100 bg-white" style="position: fixed;">
+                        <div class="row">
+                            <button type="button" class="btn btn-danger btn-lg btn-block w-100 py-1 rounded-0">Place Order</button>
                         </div>
                     </div>
                 </div>
