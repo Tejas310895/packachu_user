@@ -71,7 +71,7 @@
                         <h3 class="text-center">Your Cart</h3>
                     </div>
                     <div class="container-fluid p-1 ">
-                        <div class="row bg-white m-2" style="border-radius: 5px;max-height: 57vh;overflow-y: scroll;">
+                        <div class="row bg-white m-2" style="border-radius: 5px;max-height: 53vh;overflow-y: scroll;">
                             <?php for ($i = 0; $i < 15; $i++) : ?>
                                 <div class="col-12">
                                     <div class="row pt-2">
