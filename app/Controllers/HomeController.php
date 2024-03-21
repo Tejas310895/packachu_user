@@ -10,6 +10,7 @@ class HomeController extends BaseController
     public function __construct()
     {
         $this->productsModel = new \App\Models\ProductsModel();
+        $this->customersModel = new \App\Models\CustomerModel();
         $this->user_model = new UserModel();
     }
     public function home(): string
@@ -22,6 +23,7 @@ class HomeController extends BaseController
     public function listing(): string
     {
         $this->data['products'] = $this->productsModel->findall();
+        $this->data['customers'] = $this->customersModel->findall();
         return view('includes/header') .
             view('products', $this->data) .
             view('includes/footer');
