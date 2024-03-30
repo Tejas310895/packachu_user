@@ -8,7 +8,7 @@
                 <?php foreach ($products as $items) : ?>
                     <div class="col-4 g-3">
                         <div class="card border-0 shadow">
-                            <img src="<?= $image_url  . $items['product_img'] ?>" class="card-img-top p-0 pb-2" alt="...">
+                            <img src="<?= (@file_get_contents($image_url . $items['product_img'])) ? $image_url . $items['product_img'] : $image_url . '/uploads/no-image.png' ?>" class="card-img-top p-0 pb-2" alt="...">
                             <div class="card-body pb-2 pt-0 px-2 text-center">
                                 <h6 class="card-text text-muted fw-bold" style="font-size:0.6em !important;"><?= $items['name'] ?></h6>
                             </div>
